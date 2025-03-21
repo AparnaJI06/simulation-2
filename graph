@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+# Data
+x = [0,60,120,180,240,300,360,420,480,540,600,660]
+y = [0,0,4,11,18,36,34,43,52,59,67,70]
+
+def plot_graph(x, y):
+    plt.figure(figsize=(10, 6))
+    plt.plot(x, y, marker='o', linestyle='-', color='blue', label='Y vs Time')
+    plt.title('Y vs Time Plot')
+    plt.xlabel('Time')
+    plt.ylabel('Y')
+    plt.grid(True)
+    plt.legend()
+    plt.show()
+
+# Plotting the graph     
+plot_graph(x, y)
